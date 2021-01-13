@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
 .carousel-home img{
     width: 100%;
     height: 100%;
@@ -13,21 +21,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
-    
+    height: 100%;   
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 500px;
+    margin: 0;
 }
 .home-card{
     width: 200px;
     height: 340px;
     border-radius: 5px;
-    background: #ECEFF1;
-    box-shadow:  10px 10px 20px #dee1e3, 
-                 -10px -10px 20px #fafdff;
+    background: white;
+    box-shadow:  7px 7px 30px #c9cbcd,
+    -7px -7px 30px #ffffff;
    outline: none;
    border: none;
-
-
     }
+
+    .home-card-row4{
+        width: 300px;
+        height: 440px;
+       outline: none;
+       border: none;
+        }
+.home-card-container{
+        background:#ECEFF1; 
+        padding: 50px;
+}
 
 .home-card-container ul li{
 display: inline-block;
@@ -55,4 +75,23 @@ margin: 15px;
     height: 100px;
     padding: 5px 30px;
     color:#546E7A;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.home-jumbotron-layer {
+    background-color: rgba(225,245,254 ,0.8);
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    align-items: center;
+    padding-top: 10%;
+}
+.home-jumbotron-layer .text-secondary {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row-3 h2  {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25%;
+    font-size: 2em;
 }

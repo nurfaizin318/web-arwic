@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+.col-about-carousel{
+height: 50vh;
+
+}
+
+.col-about-carousel img{
+    max-height: 395px;
+    height: 50vh;
+    width: 100%;
+
+ }
+
+ .about-arwics{
+    font-family: 'Montserrat', sans-serif;
+
+ }
+ 
+ .about-goal-description{
+    font-family: 'Montserrat', sans-serif;
+ }
+ .about-goal-icons{
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     background: #ECEFF1;
+box-shadow:  7px 7px 30px #c9cbcd,
+             -7px -7px 30px #ffffff;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 20px;
+
+ }
+.about-row2-col2{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.about-skill{
+    width: 60px;
+    height: 60px;
+    background: rgb(77,182,172);
+    background: linear-gradient(90deg, rgba(77,182,172,1) 0%, rgba(129,199,132,1) 100%);
+    transition: all 0.2s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 1.3em;
+
+}
