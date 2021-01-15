@@ -8,8 +8,8 @@ const Home = () => {
     < >
       <div>
         <Jumbotron className="home-jumbotron text-center">
-          <div class="home-jumbotron-layer">
-            <h1><b>Welcome to Arwics</b></h1>
+          <div className="home-jumbotron-layer">
+            <h1><b>Welcome To Arwics</b></h1>
             <div className="text-secondary">We are an Information technology company with our specialty is data processing.
               <br></br>
               Combined with Artificial Intelligence technology,
@@ -108,7 +108,7 @@ const Home = () => {
         <Container fluid>
         <Row >
           <Col xs={12} md={6} xl={6} className=" p-0 m-0 " >
-            <img src="https://images.unsplash.com/photo-1610241599795-60b7c0b255fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+            <img src="https://images.unsplash.com/photo-1581092786450-7ef25f140997?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
               className="w-100"
             />
           </Col>
@@ -123,91 +123,89 @@ const Home = () => {
         </Container>
       </div>
       <div className="home-card-container text-center " style={{background:'#EEEEEE'}}>
-        <Row style={{ width: '90%'}} className="mx-auto">
+        <Row style={{ width: '90%'}} className="mx-auto home-card-description-row4">
           <Col lg={3} className=" m-1 mx-auto"  style={{backgroundColor:"white"}}>
             <div>
               <Row className="text-left ">
                 <img src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" style={{width:'100%',height:200}}/>
                 </Row>
                 <Row className="px-4 py-2 ">
-                  <h5>GSM PBX</h5>
+                  <h5><b>GSM PBX</b></h5>
                 </Row>
                 <Row className="text-left text-secondary p-4" >
-                  <p> this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
+                  <p className=""> this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
                 </Row>
             </div>
           </Col>    
            <Col lg={3} className="m-1 mx-auto" style={{backgroundColor:"white"}}>
            <div>
-              <Row className="text-left">
+              <Row className="text-left home-card-description-row4">
                 <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style={{width:'100%',height:200}}/>
                 </Row>
                 <Row className="py-2 text-left px-4">
-                  <h5>ENTERPRISE MOBILE SOLUTION</h5>
+                  <h5><b>ENTERPRISE MOBILE SOLUTION </b></h5>
                 </Row>
                 <Row className="text-left text-secondary p-4" >
-                <p>this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
+                <p className="">this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
                 </Row>
             </div>
           </Col>  
              <Col lg={3} className="m-1 mx-auto" style={{backgroundColor:"white"}}>
              <div>
-              <Row className="text-left">
+              <Row className="text-left home-card-description-row4">
                 <img src="https://images.unsplash.com/photo-1591017923291-5d5df5eb7d78?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style={{width:'100%',height:200}}/>
                 </Row>
                 <Row className="py-2 text-left px-4">
-                  <h5>Vehicle Tracking</h5>
+                  <h5><b>VEHICLE TRACKING</b></h5>
                 </Row>
                 <Row className="text-left text-secondary p-4" >
-                <p>this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
+                <p className="">this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
                 </Row>
             </div>
           </Col>
         </Row>
-        <Row style={{ width: '90%'}} className="mx-auto">
+        <Row style={{ width: '90%'}} className="mx-auto home-card-description-row4">
           <Col lg={3} className=" m-1 mx-auto mt-5"  style={{backgroundColor:"white"}}>
             <div>
               <Row className="text-left ">
                 <img src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" style={{width:'100%',height:200}}/>
                 </Row>
                 <Row className="py-2 text-left px-4">
-                  <h5>Mobile Surveillance & Face Recognition</h5>
+                  <h5><b>MOBILE SURVEIL LANCE & FACE RECOGNITION RECOGNITION</b></h5>
                 </Row>
                 <Row className="text-left text-secondary p-4" >
-                <p>this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
+                <p className="">this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
                 </Row>
             </div>
           </Col>    
            <Col lg={3} className="m-1 mx-auto mt-5" style={{backgroundColor:"white"}}>
            <div>
-              <Row className="text-left">
+              <Row className="text-left home-card-description-row4">
                 <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style={{width:'100%',height:200}}/>
                 </Row>
                 <Row className="py-2 text-left px-4">
-                  <h5>Automatic Meter Reader</h5>
+                  <h5><b>AUTOMATIC METER READER</b></h5>
                 </Row>
                 <Row className="text-left text-secondary p-4" >
-                <p>this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
+                <p className="">this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
                 </Row>
             </div>
           </Col>  
              <Col lg={3} className="m-1 mx-auto mt-5" style={{backgroundColor:"white"}}>
              <div>
-              <Row className="text-left">
+              <Row className="text-left home-card-description-row4">
                 <img src="https://images.unsplash.com/photo-1591017923291-5d5df5eb7d78?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" style={{width:'100%',height:200}}/>
                 </Row>
                 <Row className="py-2 text-left px-4 ">
-                  <h5>Aplication Finance  & service</h5>
+                  <h5><b>APLICATION FINANCE  & SERVICE</b></h5>
                 </Row>
                 <Row className="text-left text-secondary p-4" >
-                <p>this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
+                <p className="">this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>
                 </Row>
             </div>
           </Col>
         </Row>
-
       </div>
-      
     </>
   );
 }

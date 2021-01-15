@@ -4,41 +4,38 @@
 
 
 .col-about-carousel{
-height: 50vh;
+height: 70vh;
 
 }
 
 .col-about-carousel img{
-    max-height: 395px;
-    height: 50vh;
+    max-height: 695px;
+    height: 70vh;
     width: 100%;
-
  }
-
  .about-arwics{
     font-family: 'Montserrat', sans-serif;
-
  }
- 
  .about-goal-description{
     font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
  }
  .about-goal-icons{
      width: 80px;
      height: 80px;
      border-radius: 50%;
      background: #ECEFF1;
-box-shadow:  7px 7px 30px #c9cbcd,
+     box-shadow:  7px 7px 30px #c9cbcd,
              -7px -7px 30px #ffffff;
              display: flex;
              justify-content: center;
              align-items: center;
-             margin-top: 20px;
-
+             margin-top: 10px;
  }
 .about-row2-col2{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
+;
 }
 
 .about-skill{
