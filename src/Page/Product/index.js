@@ -1,8 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
-import './index.css'
+import './index.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Product = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+      }, [])
+
     return (
         <Container fluid>
             <Row>
@@ -14,16 +21,19 @@ const Product = () => {
                 <Col xs={12} md={6} lg={5} className=" my-1 mx-auto m-5" style={{ backgroundColor: "white" }} >
                     <Row>
                         <Col lg={7} className="text-center m-0 p-4  " >
-                            <img src="https://arwics.com/wp-content/uploads/2019/09/finai.jpg" className="w-100 h-100" />
+                            <img src="https://arwics.com/wp-content/uploads/2019/09/finai.jpg" className="w-100 h-100"
+                                alt="img"
+
+                            />
                         </Col>
                         <Col lg={4} className="p-4 bg-warning m-2 rounded" style={{ fontSize: "1.4em" }}>
-                            Arwics Credit Loan Micro Banking and Peer to Peer Lending Sharia Platform
+                            <h5><b>Arwics Credit Loan Micro Banking and Peer to Peer Lending Sharia Platform</b></h5>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="p-4" style={{ fontSize: 13, color: "grey" }}>
                             <p>
-                                is a Financial Technology Platform for all types of peer to peer loan activities with sharia concept. The platform has support and a complete solution for peer to peer lending activities and Credit loan Mikro Banking with the following capabilities. This application will complete feature from market place, borrower registration and investors, profiling, credit scoring, monitoring, big data analysis and collection for Sharia.
+                                Financial Technology Platform for all types of peer to peer loan activities with sharia concept. The platform has support and a complete solution for peer to peer lending activities and Credit loan Mikro Banking with the following capabilities. This application will complete feature from market place, borrower registration and investors, profiling, credit scoring, monitoring, big data analysis and collection for Sharia.
                                 <br />Arwics also introduces innovative AI-Based solutions to fulfill the needs of financial credit risk management from credit verification, credit assessment, credit pricing and credit collection
                         </p>
                         </Col>
@@ -32,10 +42,13 @@ const Product = () => {
                 <Col xs={12} md={6} lg={5} className=" my-1 mx-auto m-5" style={{ backgroundColor: "white" }}>
                     <Row>
                         <Col lg={7} className="text-center m-0 p-4">
-                            <img src="https://arwics.com/wp-content/uploads/2019/09/infra.jpg" className="w-100 h-100" />
+                            <img src="https://arwics.com/wp-content/uploads/2019/09/infra.jpg" className="w-100 h-100"
+                                alt="img"
+
+                            />
                         </Col>
                         <Col lg={4} className="p-4 bg-info text-light m-2 rounded" style={{ fontSize: "1.4em" }}>
-                            We provide complete solution for Infrastructure and IOT
+                            <h5><b>We provide complete solution for Infrastructure and IOT</b></h5>
                         </Col>
                     </Row>
                     <Row>
@@ -59,19 +72,22 @@ const Product = () => {
                 </Col>
             </Row>
             <Row className="bg-light ">
-                <Col >
+                <Col  lg={9} className="mx-auto">
                     <Row className="p-5" style={{ backgroundColor: "#FAFAFA" }} >
-                        <Col lg={4} xs={12} className="p-2">
-                            <img src="https://arwics.com/wp-content/uploads/2019/09/infra.jpg" style={{ width: '100%', height: '100%' }} />
+                        <Col data-aos="fade-up"  lg={4} xs={12} className="p-2">
+                            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80" style={{ width: '100%', height: '100%' }}
+                                alt="img"
+
+                            />
                         </Col>
-                        <Col className=" pt-3 pb-5 solution-title">
+                        <Col data-aos="fade-left" className=" pt-3 pb-5 solution-title">
                             <Row>
                                 <Col>
                                     <h1> Data Warehouse & Business Intelligent</h1>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col>
+                                <Col data-aos="fade-right" >
                                     <p>
                                         Whether you are building a new Data Warehouse, or re-architecting and consolidating your existing data stores, Arwics offers a full spectrum of Data Warehousing Solutions and Services that span technology, tools, platforms and methodologies
 
@@ -84,12 +100,12 @@ const Product = () => {
                     <Row className=" p-5" style={{ backgroundColor: "#E0E0E0" }} >
                         <Col className=" pt-3 pb-5 solution-title">
                             <Row>
-                                <Col>
+                                <Col  data-aos="fade-left">
                                     <h1> Enterprise Application Development</h1>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col>
+                                <Col data-aos="fade-right">
                                     <p>
                                         We provide complete implementation process, starting with design and development, quality assurance testing, deployment, and post implementation services.
 
@@ -98,27 +114,31 @@ const Product = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col lg={4} className="p-2">
-                            <img src="https://arwics.com/wp-content/uploads/2019/09/infra.jpg" style={{ width: '100%', height: '100%' }} />
+                        <Col  data-aos="fade-up"  lg={4} className="p-2">
+                            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80" style={{ width: '100%', height: '100%' }}
+                                alt="img"
+
+                            />
                         </Col>
                     </Row>
                     <Row className="p-5 " style={{ backgroundColor: "#FAFAFA" }} >
-                        <Col lg={4} xs={12} className="p-2 ">
-                            <img src="https://arwics.com/wp-content/uploads/2019/09/infra.jpg" style={{ width: '100%', height: '100%' }} />
+                        <Col  data-aos="fade-up"  lg={4} xs={12} className="p-2 ">
+                            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80" style={{ width: '100%', height: '100%' }}
+                                alt="img"
+
+                            />
                         </Col>
                         <Col className=" pt-3 pb-5 solution-title">
                             <Row>
-                                <Col >
+                                <Col data-aos="fade-left" >
                                     <h1> Resources Management</h1>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col >
+                                <Col  data-aos="fade-right">
                                     <p>
                                         As we have seen in this HR series for small businesses, there are some human resource requirements that are very important for small businesses. You need to hire the right people, offer competitive salaries and benefits, provide effective training, and more. But in most small businesses, resources are very limited. With little reserve to attract and many competing priorities, it is difficult to justify the costs of hiring a dedicated HR team. Thus, the HR function can be part-time responsibilities for other owners or managers, so they don’t always get the attention they deserve. In this scenario, outsourcing some or all of your HR functions to an external provider can give you a lot of sense
-                                        <br/>
-                                        IT Resources has quickly risen up to the partner of choice for many corporations; small and large. Our extensive experience in the field of information technology gives us a unique edge in identifying talent and resources and matching them to requirements and quality of our clients.
-
+                                        <br />
                                     </p>
                                 </Col>
                             </Row>

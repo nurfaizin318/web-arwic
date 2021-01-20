@@ -1,45 +1,70 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink
+  // Link,
+  NavLink,
+  Redirect
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //component
-import Header from '../Component/Header';
-import Footer from '../Component/Footer';
+// import Header from '../Component/Header';
+// import Footer from '../Component/Footer';
 
+const Header = lazy(() => import('../Component/Header'))
+const Footer = lazy(() => import('../Component/Footer'))
 
 //page
 
-import Home from '../Page/Home';
-import About from '../Page/About';
-import Product from '../Page/Product';
-import Contact from '../Page/Contact';
+// import Home from '../Page/Home';
+// import About from '../Page/About';
+// import Product from '../Page/Product';
+// import Contact from '../Page/Contact';
+
+const Home = lazy(() => import('../Page/Home'))
+const About = lazy(() => import('../Page/About'))
+const Product = lazy(() => import('../Page/Product'))
+const Contact = lazy(() => import('../Page/Contact'))
 
 const Navigation = () => {
   return (
     <div >
       <Router>
-        <Header NavLink={NavLink} />
+        <Suspense fallback={<div />}>
+          <Header NavLink={NavLink} />
+        </Suspense>
         <Switch>
-          <Route exact path="/home">
-            <Home />
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+          <Route exact path="/Home">
+            <Route>
+              <Suspense fallback={<div />}>
+                <Home />
+              </Suspense>
+            </Route>
           </Route>
           <Route path="/About">
-            <About />
+            <Suspense fallback={<div />}>
+              <About />
+            </Suspense>
           </Route>
           <Route path="/Product">
-            <Product />
+            <Suspense fallback={<div />}>
+              <Product />
+            </Suspense>
           </Route>
           <Route path="/Contact">
-            <Contact />
+            <Suspense fallback={<div />}>
+              <Contact />
+            /</Suspense>
           </Route>
         </Switch>
-        <Footer />
+        <Suspense fallback={<div />}>
+          <Footer />
+        </Suspense>
       </Router>
     </div>
   );

@@ -6,26 +6,33 @@ html,body{
     margin: 0;
     padding: 0;
 }
-.carousel-home img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.row1-col1{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
-
-.home-jumbotron p {
- font-size: 13px;
- object-fit: cover;
+.row1-back-ar{
+    font-size: 20em;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top:-100px;
+    right: -20px;
+    color: rgba(207,216,220 ,0.2);
+    visibility: 0.1px;
 }
-.home-jumbotron {
-    background-image: url("https://www.trainingzone.co.uk/sites/default/files/learning_technology_solutions_0.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;   
-    padding: 0;
+.description-text h1{
+    font-size: 3em;
+}
+.row1-back-wics{
+    font-size: 20em;
     font-family: 'Raleway', sans-serif;
-    height: 500px;
-    margin: 0;
+    position: absolute;
+    left: 0px;
+    top:90px;
+    color: rgba(207,216,220 ,0.3);
+    visibility: 0.1px;
+    z-index: 1;
+    
 }
 .home-card{
     width: 200px;
@@ -59,6 +66,8 @@ margin: 15px;
 .home-card-description-row4{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
 }
 .col-card-title{
     width: 100%;
@@ -98,3 +107,21 @@ margin: 15px;
     margin-top: 25%;
     font-size: 2em;
 }
+@media only screen and (max-width: 900px) {
+    .row1-back-ar{
+        display: none   ;
+   
+    }
+    .row1-back-wics{
+        display: none;
+        
+    }
+
+    .robot-img{
+        display: none;
+    }
+    .hand-img{
+        display: none;
+    }
+
+  }

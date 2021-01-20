@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect,lazy } from 'react';
 import { Col, Row, Carousel, Container } from 'react-bootstrap';
 import './index.css';
 import vision from "../../Assets/Icons/vission.png"
@@ -6,8 +6,19 @@ import mision from "../../Assets/Icons/mission.png"
 import goal from "../../Assets/Icons/goal.png"
 
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
+
+
     return (
         <>
             <div className="about">
@@ -27,7 +38,7 @@ const About = () => {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                    classNave="d-block w-100"
+                                    className="d-block w-100"
                                     src="https://www.nds.com.pk/wp-content/uploads/2019/03/new-technologies-in-software-field.png"
                                     alt="Third slide"
                                 />
@@ -41,73 +52,83 @@ const About = () => {
                 </div>
                 <Container fluid className="text-dark">
                     <Row className="about-row2 text-secondary">
-                        <Col xs={12} lg={4} className=" p-5 bg-light" style={{ backgroundColor: 'white',fontSize:12 }}>
-                            <h3 className="mt-5" style={{fontSize:50}}><b>ABOUT ARWICS</b></h3>
-                            <div className="mb-2"><b><h6>Team with a strong experience </h6></b></div>
-                            <div className="about-arwics" >
-                                Arwics was founded in 2014, we are a fast growing company with
-                                strong Development Team consists of experienced professionals.
+                        <Col xs={12} lg={5} className=" p-5 " style={{ backgroundColor: 'white', fontSize: 12 }}>
+                            <div className=" mx-auto" >
+                                <h3 className="mt-5" style={{ fontSize: 50 }}><b>ABOUT ARWICS</b></h3>
+                                <div className="mb-2"><b><h6>Team with a strong experience </h6></b></div>
+                                <div className="about-arwics" >
+                                    Arwics was founded in 2014, we are a fast growing company with
+                                    strong Development Team consists of experienced professionals.
                             <div className="mt-2" >Arwics is one of the System Integrator companies initiated by the children of the nation in the midst of incessant investment from abroad, we try to always provide our best solutions with sources from within the country, our dream is that all lines of business that exist in the motherland can be sovereign in their own country.
                             </div>
-                                <div className="mt-2 "><b>Our consulting mantra is guided by 3 simple rules.</b></div>
-                                <div className="mt-2">Focus on business priorities</div>
-                                <div>Custom made solution</div>
-                                <div>Standardized methodologies</div>
+                                    <div className="mt-2 "><b>Our consulting mantra is guided by 3 simple rules.</b></div>
+                                    <div className="mt-2">Focus on business priorities</div>
+                                    <div>Custom made solution</div>
+                                    <div>Standardized methodologies</div>
+                                </div>
                             </div>
                         </Col>
-                        <Col lg={1} xs={12} className="p-2 " style={{ backgroundColor: "#F5F5F5" }}>
+                        <Col  lg={1} xs={12} className="p-2 " style={{ backgroundColor: "#F5F5F5" }}>
                             <Row className="p-3" >
                                 <Col lg={12} xs={4} className="about-row2-col2 " style={{ height: 150 }}>
-                                    <Row>
-                                        <Col>
-                                            <div className="about-skill mx-auto">
-                                                <p><b>16</b></p>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <p className="mt-2"><b>Specialists</b></p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                                <Col lg={12} xs={4} className=" about-row2-col2 " style={{ height: 150 }}>
-                                    <Row>
-                                        <Col>
-                                            <div className="about-skill mx-auto">
-                                                <p><b>120</b></p>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <p className="mt-2 text-dark"><b>Happy Client</b></p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                                <Col lg={12} xs={4} className=" about-row2-col2 " style={{ height: 150 }}>
-                                    <Row>
-                                        <Col>
-                                            <div className="about-skill mx-auto">
-                                                <p><b>315</b></p>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <p className="mt-2"><b>Sucessfull Case</b></p>
+                                    <div data-aos="fade-left">
+                                        <Row>
+                                            <Col>
+                                                <div className="about-skill mx-auto">
+                                                    <p><b>16</b></p>
+                                                </div>
                                             </Col>
-                                    </Row>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <p className="mt-2"><b>Specialists</b></p>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </Col>
+                                <Col lg={12} xs={4} className=" about-row2-col2 " style={{ height: 150 }}>
+                                    <div data-aos="fade-left">
+                                        <Row>
+                                            <Col>
+                                                <div className="about-skill mx-auto">
+                                                    <p><b>120</b></p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <p className="mt-2 "><b>Happy Client</b></p>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </Col>
+                                <Col lg={12} xs={4} className=" about-row2-col2 " style={{ height: 150 }}>
+                                    <div data-aos="fade-left">
+                                        <Row>
+                                            <Col>
+                                                <div className="about-skill mx-auto">
+                                                    <p><b>315</b></p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <p className="mt-2"><b>Sucessfull Case</b></p>
+                                            </Col>
+                                        </Row>
+                                    </div>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} lg={7} className="p-5" style={{ backgroundColor: "#ECEFF1",fontSize:13 }}>
+                        <Col xs={12} lg={6} className="p-5 mx-auto p-3" style={{ backgroundColor: "#ECEFF1", fontSize: 13 }}>
                             <Row>
-                                <Col>
+                                <Col data-aos="fade-up" >
                                     <Row>
                                         <Col lg={2} className=" p-0">
                                             <div className="about-goal-icons "  >
-                                                <img src={mision} style={{ width: 47, height: 35, marginLeft: -10 }} />
+                                                <img src={mision} style={{ width: 47, height: 35, marginLeft: -10 }}
+                                                    alt="img"
+                                                />
                                             </div>
                                         </Col>
                                         <Col lg={10} className="p-2 mt-2 pl-3 about-goal-description">
@@ -120,11 +141,14 @@ const About = () => {
                                 </Col>
                             </Row>
                             <Row className="mt-2 pt-4">
-                                <Col>
+                                <Col data-aos="fade-up">
                                     <Row>
                                         <Col lg={2} className="p-0">
                                             <div className="about-goal-icons">
-                                                <img src={vision} style={{ width: 35, height: 35 }} />
+                                                <img src={vision} style={{ width: 35, height: 35 }}
+                                                    alt="img"
+
+                                                />
                                             </div>
                                         </Col>
                                         <Col lg={10} className="p-2 mt-2 pl-3 about-goal-description">
@@ -135,11 +159,14 @@ const About = () => {
                                 </Col>
                             </Row>
                             <Row className="mt-2 pt-4">
-                                <Col>
+                                <Col data-aos="fade-up">
                                     <Row>
                                         <Col lg={2} className="p-0">
                                             <div className="about-goal-icons" >
-                                                <img src={goal} style={{ width: 45, height: 45 }} />
+                                                <img src={goal} style={{ width: 45, height: 45 }}
+                                                    alt="img"
+
+                                                />
                                             </div>
                                         </Col>
                                         <Col lg={10} className="p-2 mt-2 pl-3 about-goal-description">
