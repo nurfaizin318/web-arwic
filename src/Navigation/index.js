@@ -59,7 +59,7 @@ const Navigation = () => {
           <Route path="/Contact">
             <Suspense fallback={<div />}>
               <Contact />
-            /</Suspense>
+            </Suspense>
           </Route>
         </Switch>
         <Suspense fallback={<div />}>

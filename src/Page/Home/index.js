@@ -1,13 +1,11 @@
-import React, { useEffect,lazy } from 'react';
-import { Row, Col, Jumbotron, Button, Container } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Row, Col, Button, Container } from 'react-bootstrap';
 import './index.css';
 import icons_card from '../../Assets/Icons/icons.webp';
 import hands from '../../Assets/Icons/hand.png';
 import robot from '../../Assets/Icons/robot.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
-
 
 
 const Home = () => {
@@ -137,7 +135,7 @@ const Home = () => {
         <Container fluid>
           <Row >
             <Col xs={12} md={6} xl={6} className=" p-0 m-0 " >
-              <img data-aos="fade-down" src="https://images.unsplash.com/photo-1581092786450-7ef25f140997?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              <img data-aos="fade-up" src="https://images.unsplash.com/photo-1581092786450-7ef25f140997?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                 className="w-100"
                 alt="img"
               />

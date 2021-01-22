@@ -1,4 +1,4 @@
-import React, { useEffect,lazy } from 'react';
+import React, { useEffect} from 'react';
 import { Col, Row, Carousel, Container } from 'react-bootstrap';
 import './index.css';
 import vision from "../../Assets/Icons/vission.png"
