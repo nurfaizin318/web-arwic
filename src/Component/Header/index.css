@@ -5,13 +5,15 @@
 .nav-item{
     letter-spacing: 1px;
     box-sizing: border-box;
-    width: 100px;
+    min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
   
+
+
 .navbar-header{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -55,14 +57,14 @@
     height:100%;
     border-radius:20px;
     padding:5px 16px;
-    width: 100px;
+    min-width: 120px;
     background-color: #90CAF9;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 950px) {
     .search-header{
      margin-top: 10px;
     
@@ -70,7 +72,7 @@
     .nav-item{
         letter-spacing: 1px;
         box-sizing: border-box;
-        width: 100px;
+        width: 140px;
         display: flex;
         justify-content:left;
         align-items: left;

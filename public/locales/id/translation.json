@@ -1,0 +1,39 @@
+{
+    "header": {
+        "1": "Beranda",
+        "2": "Tentang Arwic",
+        "3": "Produk",
+        "4": "Kontak",
+        "5": "Galeri",
+        "6": "Berita"
+    },
+    "search": {
+        "1": "cari"
+    },
+    "language": {
+        "1": "Bahasa"
+    },
+    "welcome": {
+        "1": "SELAMAT DATANG DI",
+        "2": "Arwics",
+        "3": "Kami adalah perusahaan teknologi informasi dengan spesialisasi kami dalam pengolahan data. Dikombinasikan dengan teknologi Artificial Intelligence, kami akan membawa pendekatan baru ke dunia industri keuangan, perbankan, dan asuransi. Dengan Analisis Data dan menggabungkan dengan pendekatan Kecerdasan Buatan untuk semua data kami, kami dapat membuat profil semua pelanggan dan memberikan target terukur untuk kebutuhan pelanggan."
+    },
+    "quality": {
+        "1": {
+            "1": "Terbukti",
+            "2": "Sudah diterapkan di beberapa industri perbankan dan asuransi"
+        },
+        "2": {
+            "1": "Solusi Total",
+            "2": "Memberikan solusi total untuk industri Perbankan dan Asuransi. Berpindah dari pendekatan tradisional ke digital yang digabungkan dengan kecerdasan buatan."
+        },
+        "3": {
+            "1": "Proses Bisnis Kuat",
+            "2": "Kami memiliki banyak Model bisnis untuk industri pinjaman dan asuransi. Dengan model ini, kami dapat menjelaskan dengan klien untuk menentukan solusi yang sesuai untuk klien"
+        },
+        "4": {
+            "1": "Tim Ahli & Berkompetensi",
+            "2": "Didukung oleh tim Berkompetensi / Ahli dalam Analis Bisnis, Pengembangan Perangkat Lunak TI, Big Data, Kecerdasan Buatan, Perbankan dan Asuransi"
+        }
+    }
+}

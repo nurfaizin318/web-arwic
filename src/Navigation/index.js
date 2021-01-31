@@ -27,6 +27,8 @@ const Home = lazy(() => import('../Page/Home'))
 const About = lazy(() => import('../Page/About'))
 const Product = lazy(() => import('../Page/Product'))
 const Contact = lazy(() => import('../Page/Contact'))
+const Gallery = lazy(() => import('../Page/Gallery'))
+const News = lazy(() => import('../Page/News'))
 
 const Navigation = () => {
   return (
@@ -59,6 +61,16 @@ const Navigation = () => {
           <Route path="/Contact">
             <Suspense fallback={<div />}>
               <Contact />
+            </Suspense>
+          </Route>
+          <Route path="/Gallery">
+            <Suspense fallback={<div />}>
+              <Gallery />
+            </Suspense>
+          </Route>
+          <Route path="/News">
+            <Suspense fallback={<div />}>
+              <News />
             </Suspense>
           </Route>
         </Switch>

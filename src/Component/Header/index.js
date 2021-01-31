@@ -1,47 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Navbar,
     Nav,
     Form,
-    FormControl
+    FormControl,
+    DropdownButton,
+    Dropdown
 
 } from 'react-bootstrap';
-import './index.css'
+import './index.css';
+import { useTranslation } from 'react-i18next';
+
+
+
 
 const Header = ({ NavLink }) => {
+
+
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (ctx) => {
+        i18n.changeLanguage(`${ctx}`)
+    }
+
     return (
         <Navbar bg="white" expand="lg" className="px-5 py-3 sticky-top navbar-header" style={{ fontSize: 13, }}>
-            <Navbar.Brand href="#home">ARWICS</Navbar.Brand>
+            <Navbar.Brand href="#home"><img src="https://arwics.com/wp-content/uploads/2019/09/arwics-logo-1.png" style={{width:110,height:30,objectFit:"cover"}} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                 </Nav>
                 <Nav className="mr-auto navbar-insurance" >
                     <ul className="navbar-nav">
-                        <li className="nav-item ">
+                        <li className="nav-item">
                             <NavLink to="/home" className="nav-link">
-                                <span >Home</span>
+                            {t('header.1')}
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/About" className="nav-link"  activeClassName="active" >
-                                <span >About Arwic</span>
+                            <NavLink to="/About" className="nav-link" activeClassName="active" >
+                                <span >{t('header.2')}</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/Product" className="nav-link ">
-                                <span >Product</span>
+                                <span >{t('header.3')}</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/contact" className="nav-link">
-                                <span >Contact</span>
+                                <span >{t('header.4')}</span>
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/Gallery" className="nav-link">
+                                <span >{t('header.5')}</span>
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/News" className="nav-link">
+                                <span >{t('header.6')}</span>
                             </NavLink>
                         </li>
                         <li>
-                        <Form inline>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2 search-header" />
-                        </Form>
+                            <Form inline>
+                                <FormControl type="text" placeholder="Search" className="mr-sm-2 search-header" />
+                            </Form>
+                        </li>
+                        <li>
+                            <DropdownButton
+                                alignRight
+                                title="Dropdown right"
+                                id="dropdown-menu-align-right"
+                                onSelect={(e) => changeLanguage(e)}
+                            >
+                                <Dropdown.Item eventKey="en">English</Dropdown.Item>
+                                <Dropdown.Item eventKey="fr">IndoNesia</Dropdown.Item>
+                                <Dropdown.Item eventKey="option-3">option 3</Dropdown.Item>
+                               
+                            </DropdownButton>
                         </li>
                     </ul>
 

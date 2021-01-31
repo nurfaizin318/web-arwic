@@ -53,3 +53,65 @@ height: 70vh;
     font-size: 1.3em;
 
 }
+
+.about-team ul li{
+ 
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+    
+
+}
+
+.about-card-container{
+    width: 260px;
+    height: 400px;
+    margin: 0px -50px;
+    transition: 0.4s;
+    
+}
+.about-card-container:hover{
+   
+    margin: 0px 5px;
+
+    
+}
+
+
+.about-avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:10px solid #263238;
+    background-color: #E3F2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.avatar-container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.about-partner ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 2px 5px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .about-card-container:hover{
+   
+        margin: 0px 0px;
+    
+        
+    }
+  }

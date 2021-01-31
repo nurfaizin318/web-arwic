@@ -1,0 +1,39 @@
+{
+    "header": {
+        "1": "Home",
+        "2": "About Arwics",
+        "3": "Product",
+        "4": "Contact",
+        "5": "Gallery",
+        "6": "News"
+    },
+    "search": {
+        "1": "Search"
+    },
+    "language": {
+        "1": "Language"
+    },
+    "welcome": {
+        "1": "WELCOME TO",
+        "2": "Arwics",
+        "3": "We are an Information technology company with our specialty is data processing. Combined with Artificial Intelligence technology, we will bring a new approach to the world of financial, banking and insurance industries. With the Data Analysis and combine with Artificial Intelligence approaches to all our data, we can make profiling all of customers and provide measurable targets for customer needs."
+    },
+    "quality": {
+        "1": {
+            "1": "Proven",
+            "2": "Already implemented in some banking and insurance industry"
+        },
+        "2": {
+            "1": "Total Solution",
+            "2": "Bring total solution for Banking and Insurance industry. Move from traditional to digital approach combine with Artificial intelligence."
+        },
+        "3": {
+            "1": "Strong  Business Process",
+            "2": "We have a lot of business Model for loan and insurance industri. With this model, we can elaborate with client to define suitable solution for client"
+        },
+        "4": {
+            "1": "Expert & Competence Team",
+            "2": "Support by Advance/ Expert Team specialist in Business Analyst, IT Software Development, Big Data, Artificial Intelligence, Banking and Insurance"
+        }
+    }
+}

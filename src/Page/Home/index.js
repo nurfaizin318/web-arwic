@@ -3,12 +3,15 @@ import { Row, Col, Button, Container } from 'react-bootstrap';
 import './index.css';
 import icons_card from '../../Assets/Icons/icons.webp';
 import hands from '../../Assets/Icons/hand.png';
-import robot from '../../Assets/Icons/robot.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import { useTranslation } from 'react-i18next';
+import {faThumbsUp,faTachometerAlt,faDumbbell,faUsers } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = () => {
+
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -26,11 +29,10 @@ const Home = () => {
               <div>
                 <img className="hand-img" src={hands} style={{ width: 250, height: 250, position: "absolute", bottom: 0, right: 0 }} alt="img" />
               </div>
-              <div data-aos="fade-right" className="mx-auto description-text" style={{ width: '60%', color: "#78909C", zIndex: 99, }}>
-                <h1 className="text-info"><b>WELCOME TO</b></h1>
+              <div data-aos="fade-right" className="mx-auto description-text" style={{ width: '80%', color: "#78909C", zIndex: 99, }}>
+                <h1 className="text-info"><b>{t('welcome.1')}</b></h1>
                 <h1><b>ARWICS</b></h1>
-                <p >We are an Information technology company with our specialty is data processing. Combined with Artificial Intelligence technology, we will bring a new approach to the world of financial, banking and insurance industries.
-                With the Data Analysis and combine with Artificial Intelligence approaches to all our data, we can make profiling all of customers and provide measurable targets for customer needs.
+                <p >{t('welcome.3')}
               </p>
 
               </div>
@@ -40,7 +42,7 @@ const Home = () => {
                 <p>wics</p>
               </div>
               <div>
-                <img  className="robot-img" src={robot} style={{ width: 250, height: 250, position: "absolute", top: 10, left: -68 }} alt="img" />
+                {/* <img  className="robot-img" src={robot} style={{ width: 250, height: 250, position: "absolute", top: 10, left: -68 }} alt="img" /> */}
               </div>
             </Col>
           </Row>
@@ -52,17 +54,20 @@ const Home = () => {
             <div data-aos="fade-right" className="home-card">
               <Row>
                 <Col className="col-icons-container">
-                  <img data-aos="fade-bottom" src={icons_card} style={{ width: 80, height: 80 }} alt="icon" />
+                  {/* <img data-aos="fade-bottom" src={icons_card} style={{ width: 80, height: 80 }} alt="icon" /> */}
+                  <div className="icon-container mx-auto">
+                  <FontAwesomeIcon icon={faThumbsUp} color="#009688"style={{fontSize:30}} />
+                  </div>
                 </Col>
               </Row>
               <Row>
-                <Col className="col-card-title">
-                  <b>Proven</b>
+                <Col className="col-card-title px-5">
+                  <b>{t('quality.1.1')}</b>
                 </Col>
               </Row>
               <Row>
                 <Col className="col-card-description">
-                  Already implemented in some banking and insurance industry
+                {t('quality.1.2')}
                   </Col>
               </Row>
             </div>
@@ -71,18 +76,19 @@ const Home = () => {
             <div data-aos="fade-up" className="home-card">
               <Row>
                 <Col className="col-icons-container">
-                  <img src={icons_card} style={{ width: 80, height: 80 }} alt="icon" />
+                <div className="icon-container mx-auto">
+                  <FontAwesomeIcon icon={faTachometerAlt} color="#009688"style={{fontSize:30}} />
+                  </div>
                 </Col>
               </Row>
               <Row>
-                <Col className="col-card-title">
-                  <b>Total Solution</b>
+                <Col className="col-card-title px-5">
+                  <b>{t('quality.2.1')}</b>
                 </Col>
               </Row>
               <Row>
                 <Col className="col-card-description ">
-                  Bring total solution for Banking and Insurance industry. Move from traditional to digital approach combine with Artificial intelligence.
-
+                {t('quality.2.2')}
                   </Col>
               </Row>
             </div>
@@ -91,18 +97,19 @@ const Home = () => {
             <div data-aos="fade-up" className="home-card">
               <Row>
                 <Col className="col-icons-container">
-                  <img src={icons_card} style={{ width: 80, height: 80 }} alt="icon" />
+                <div className="icon-container mx-auto">
+                  <FontAwesomeIcon icon={faDumbbell} color="#009688"style={{fontSize:30}} />
+                  </div>
                 </Col>
               </Row>
               <Row >
-                <Col className="col-card-title" >
-                  <b>
-                    Strong <br></br> Business Process</b>
+                <Col className="col-card-title px-5" >
+                    <b>{t('quality.3.1')}</b>
                 </Col>
               </Row>
               <Row>
                 <Col className="col-card-description">
-                  We have a lot of business Model for loan and insurance industri. With this model, we can elaborate with client to define suitable solution for client
+                {t('quality.3.2')}
                   </Col>
               </Row>
             </div>
@@ -111,26 +118,27 @@ const Home = () => {
             <div data-aos="fade-left" className="home-card">
               <Row>
                 <Col className="col-icons-container">
-                  <img src={icons_card} style={{ width: 80, height: 80 }} alt="icon" />
+                <div className="icon-container mx-auto">
+                  <FontAwesomeIcon icon={faUsers} color="#009688"style={{fontSize:30}} />
+                  </div>
                 </Col>
               </Row>
               <Row>
-                <Col className="col-card-title">
+                <Col className="col-card-title px-5">
                   <b>
-                    Expert & <br></br>Competence Team
+                  {t('quality.4.1')}
                     </b>
                 </Col>
               </Row>
               <Row>
                 <Col className="col-card-description ">
-                  Support by Advance/ Expert Team specialist in Business Analyst, IT Software Development, Big Data, Artificial Intelligence, Banking and Insurance
+                {t('quality.4.2')}
                   </Col>
               </Row>
             </div>
           </li>
         </ul>
       </div>
-
       <div style={{ backgroundColor: "#26A69A", }} className="row-3  text-center text-light ">
         <Container fluid>
           <Row >
@@ -150,11 +158,15 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-
-
       <div className="home-card-container  " style={{ background: '#EEEEEE' }}>
+        <Row>
+          <Col className="text-center">
+            <h1><b>Other Services that We can Provide</b></h1>   
+            <hr style={{borderWidth:2,maxWidth:'50%'}}></hr>       
+          </Col>
+        </Row>
         <Row style={{ width: '90%' }} className="mx-auto home-card-description-row4 ">
-          <Col  data-aos="fade-up" lg={3} md={5} className=" m-1 " style={{ backgroundColor: "white" }}>
+          <Col  data-aos="fade-up" lg={3} md={5} className="m-1" style={{ backgroundColor: "white" }}>
             <div>
               <Row className="text-left ">
                 <img src="https://images.unsplash.com/photo-1520869562399-e772f042f422?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" style={{ width: '100%', height: 200 }}
@@ -207,7 +219,7 @@ const Home = () => {
                 />
               </Row>
               <Row className="py-2 text-left px-4">
-                <h5><b>MOBILE SURVEIL LANCE & FACE RECOGNITION RECOGNITION</b></h5>
+                <h5><b>MOBILE SURVEIL LANCE & FACE RECOGNITION </b></h5>
               </Row>
               <Row className="text-left text-secondary p-4" >
                 <p className="">this service allows corporate customers to treat their GSM cellular as part of their corporate landine network</p>

@@ -1,0 +1,9 @@
+.gallery-img ul li{
+ 
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 2px;
+    
+}
+

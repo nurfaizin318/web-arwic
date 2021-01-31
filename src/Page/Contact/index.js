@@ -82,15 +82,12 @@ const Contact = () => {
                             <Row className="mt-1 ">
                                 <Col lg={2} xs={3} className="p-3 ">
                                     <div className="contact-list-icon">
-
                                         <FontAwesomeIcon icon={faBuilding} color="#FF9800" style={{ fontSize: 20 }} />
-
                                     </div>
                                 </Col>
                                 <Col lg={9} xs={7} className="pt-4 ml-1 ">
                                     <p>	PT ARWIC TECHNOLOGY SOLUSINDO</p>
                                     <hr style={{ width: '20%', float: "left" }} />
-
                                 </Col>
                             </Row>
                         </Container>
@@ -99,7 +96,6 @@ const Contact = () => {
                                 <Col lg={2} xs={3} className="p-3">
                                     <div className="contact-list-icon">
                                         <FontAwesomeIcon icon={faMapMarked} color="#FF9800" />
-
                                     </div>
                                 </Col>
                                 <Col lg={9} xs={7} className="pt-4 ml-1">
@@ -107,8 +103,6 @@ const Contact = () => {
                                     Jl. TB Simatupang No. 18C
                             Jakarta 12430</p>
                                     <hr style={{ width: '20%', float: "left" }} />
-
-
                                 </Col>
                             </Row>
                         </Container>
@@ -175,9 +169,7 @@ const Contact = () => {
                                                     type="email"
                                                     required
                                                     onChange={(e) => { setData({ ...data, email: e.target.value }) }}
-
                                                 />
-
                                             </Form.Group>
                                             <Form.Group controlId="formBasicTelephone">
                                                 <Form.Label>Telephone</Form.Label>
@@ -186,7 +178,6 @@ const Contact = () => {
                                                     required
                                                     onChange={(e) => { setData({ ...data, telephone: e.target.value }) }}
                                                 />
-
                                             </Form.Group>
                                             <Form.Group controlId="formBasicCompany">
                                                 <Form.Label>Company</Form.Label>
@@ -226,14 +217,10 @@ const Contact = () => {
                                             </Button>
                                         </Form>
                             }
-
                                     </Col>
-
                                 </Row>
                         </Container>
-
                     </Col>
-
                 </Row>
                 <Toast style={{ position: "fixed", left: 20, bottom: 20, width: 200,zIndex:999 }}
                 onClose={() => setToastSuccess(false)}

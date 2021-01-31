@@ -28,11 +28,25 @@ html,body{
     font-family: 'Raleway', sans-serif;
     position: absolute;
     left: 0px;
-    top:90px;
+    top:70px;
     color: rgba(207,216,220 ,0.3);
     visibility: 0.1px;
     z-index: 1;
     
+}
+.icon-container{
+    width: 70px;
+    height:70px;
+    border-radius: 50px;
+    background: #fffdff;
+    box-shadow: 5px 5px 14px #f2f0f2,
+                 -5px -5px 14px #ffffff,
+                 inset 5px 5px 14px #f2f0f2,
+                inset -5px -5px 14px #ffffff;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home-card{
     width: 200px;
