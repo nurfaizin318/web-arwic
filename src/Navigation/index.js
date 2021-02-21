@@ -13,8 +13,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Header from '../Component/Header';
 // import Footer from '../Component/Footer';
 
-const Header = lazy(() => import('../Component/Header'))
-const Footer = lazy(() => import('../Component/Footer'))
+const Header = lazy(() => import('../Component/Header'));
+const Footer = lazy(() => import('../Component/Footer'));
+const Sidebar = lazy(() => import('../Component/Sidebar'));
 
 //page
 
@@ -30,56 +31,89 @@ const Contact = lazy(() => import('../Page/Contact'))
 const Gallery = lazy(() => import('../Page/Gallery'))
 const News = lazy(() => import('../Page/News'))
 
+
+const HomeAdmin = lazy(() => import('../Page/Admin/Home'))
+
 const Navigation = () => {
+
   return (
     <div >
       <Router>
-        <Suspense fallback={<div />}>
-          <Header NavLink={NavLink} />
-        </Suspense>
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/home" />
+          <Route path="/admin">
+            <Admin />
           </Route>
-          <Route exact path="/Home">
-            <Route>
-              <Suspense fallback={<div />}>
-                <Home />
-              </Suspense>
-            </Route>
-          </Route>
-          <Route path="/About">
-            <Suspense fallback={<div />}>
-              <About />
-            </Suspense>
-          </Route>
-          <Route path="/Product">
-            <Suspense fallback={<div />}>
-              <Product />
-            </Suspense>
-          </Route>
-          <Route path="/Contact">
-            <Suspense fallback={<div />}>
-              <Contact />
-            </Suspense>
-          </Route>
-          <Route path="/Gallery">
-            <Suspense fallback={<div />}>
-              <Gallery />
-            </Suspense>
-          </Route>
-          <Route path="/News">
-            <Suspense fallback={<div />}>
-              <News />
-            </Suspense>
+          <Route path="/">
+            <User />
           </Route>
         </Switch>
-        <Suspense fallback={<div />}>
-          <Footer />
-        </Suspense>
       </Router>
     </div>
   );
+}
+
+const User = (location) => {
+  return (
+    <>
+      {location.pathname !== '/admin' && (
+        <Suspense fallback={<div />}>
+          <Header NavLink={NavLink} />
+        </Suspense>)
+      }
+      <Route  path="/">
+        <Redirect to="/home" />
+      </Route>
+      <Route exact path="/home">
+        <Suspense fallback={<div />}>
+          <Home />
+        </Suspense>
+      </Route>
+      <Route path="/about">
+        <Suspense fallback={<div />}>
+          <About />
+        </Suspense>
+      </Route>
+      <Route path="/product">
+        <Suspense fallback={<div />}>
+          <Product />
+        </Suspense>
+      </Route>
+      <Route path="/contact">
+        <Suspense fallback={<div />}>
+          <Contact />
+        </Suspense>
+      </Route>
+      <Route path="/gallery">
+        <Suspense fallback={<div />}>
+          <Gallery />
+        </Suspense>
+      </Route>
+      <Route path="/news">
+        <Suspense fallback={<div />}>
+          <News />
+        </Suspense>
+      </Route>
+      <Suspense fallback={<div />}>
+        <Footer />
+      </Suspense>
+    </>
+  )
+}
+const Admin = () => {
+  return (
+    <div>
+      <Suspense fallback={<div />}>
+        <Sidebar />
+      </Suspense>
+      <Route>
+        <Switch>
+          <Suspense fallback={<div />}>
+            <HomeAdmin NavLink={NavLink} />
+          </Suspense>
+        </Switch>
+      </Route>
+    </div>
+  )
 }
 
 export default Navigation;

@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import { Col, Row, Carousel, Container } from 'react-bootstrap';
 import './index.css';
-import vision from "../../Assets/Icons/vission.png"
-import mision from "../../Assets/Icons/mission.png"
-import goal from "../../Assets/Icons/goal.png"
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+
+import { faBullseye,faFlag,faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -126,9 +124,7 @@ const About = () => {
                                     <Row style={{minHeight:140}} >
                                         <Col lg={2} className=" p-0">
                                             <div className="about-goal-icons "  >
-                                                <img src={mision} style={{ width: 47, height: 35, marginLeft: -10 }}
-                                                    alt="img"
-                                                />
+                                            <FontAwesomeIcon icon={faBullseye} color="#009688" style={{ fontSize: 30 }} />
                                             </div>
                                         </Col>
                                         <Col lg={10} className="p-2 mt-2 pl-3 about-goal-description">
@@ -145,9 +141,7 @@ const About = () => {
                                     <Row style={{minHeight:140}} >
                                         <Col lg={2} className="p-0 x">
                                             <div className="about-goal-icons">
-                                                <img src={vision} style={{ width: 35, height: 35 }}
-                                                    alt="img"
-                                                />
+                                            <FontAwesomeIcon icon={faRocket} color="#009688" style={{ fontSize: 30 }} />
                                             </div>
                                         </Col>
                                         <Col lg={10} className="p-2 mt-2 pl-3 about-goal-description">
@@ -162,9 +156,7 @@ const About = () => {
                                     <Row   style={{minHeight:140}} >
                                         <Col lg={2} className="p-0">
                                             <div className="about-goal-icons" >
-                                                <img src={goal} style={{ width: 45, height: 45 }}
-                                                    alt="img"
-                                                    />
+                                            <FontAwesomeIcon icon={faFlag} color="#009688" style={{ fontSize: 30 }} />
                                             </div>
                                         </Col>
                                         <Col lg={10} className="p-2 mt-2 pl-3 about-goal-description">
@@ -191,7 +183,9 @@ const About = () => {
                                                 <div className="about-card-container">
                                                     <div className="avatar-container ">
                                                         <div className="about-avatar">
-                                                            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                                        <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                        
+                                                        alt="img"/>
                                                         </div>
                                                     </div>
                                                     <div className="text-center p-3">
@@ -204,7 +198,8 @@ const About = () => {
                                                 <div className="about-card-container">
                                                     <div className="avatar-container ">
                                                         <div className="about-avatar">
-                                                            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                                            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                            alt="img" />
                                                         </div>
                                                     </div>
                                                     <div className="text-center p-3">
@@ -217,7 +212,9 @@ const About = () => {
                                                 <div className="about-card-container">
                                                     <div className="avatar-container ">
                                                         <div className="about-avatar">
-                                                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                                                            alt="img"
+                                                            />
                                                         </div>
                                                     </div>
                                                     <div className="text-center p-3">
@@ -230,7 +227,8 @@ const About = () => {
                                                 <div className="about-card-container">
                                                     <div className="avatar-container ">
                                                         <div className="about-avatar">
-                                                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                                                            alt="img" />
                                                         </div>
                                                     </div>
                                                     <div className="text-center p-3">
@@ -243,7 +241,8 @@ const About = () => {
                                                 <div className="about-card-container">
                                                     <div className="avatar-container ">
                                                         <div className="about-avatar">
-                                                            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                                            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                            alt="img" />
                                                         </div>
                                                     </div>
                                                     <div className="text-center p-3">
@@ -271,10 +270,14 @@ const About = () => {
                                 <div className="about-partner">
                                     <ul className="p-0">
                                         <li>
-                                            <img src="https://miro.medium.com/max/3508/1*POIunC9euahenSUX26jXSg.png" style={{ width: 100, height: 100, objectFit: 'cover' }} />
+                                            <img src="https://miro.medium.com/max/3508/1*POIunC9euahenSUX26jXSg.png" style={{ width: 100, height: 100, objectFit: 'cover' }} 
+                                            alt="img"
+                                            />
                                         </li>
                                         <li>
-                                            <img src="https://lh3.googleusercontent.com/mlQLDXaq1AW7N3xRsWZX8xzgXq-j3TPj9oww8F8mGKfn4Xg-pzAM1bOeZyMw_ow2cPI" style={{ width: 100, height: 100, objectFit: 'cover' }} />
+                                            <img src="https://lh3.googleusercontent.com/mlQLDXaq1AW7N3xRsWZX8xzgXq-j3TPj9oww8F8mGKfn4Xg-pzAM1bOeZyMw_ow2cPI" style={{ width: 100, height: 100, objectFit: 'cover' }} 
+                                            alt="img"
+                                            />
                                         </li>
                                     </ul>
                                 </div>

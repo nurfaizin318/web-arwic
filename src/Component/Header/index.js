@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Navbar,
     Nav,
@@ -23,9 +23,11 @@ const Header = ({ NavLink }) => {
         i18n.changeLanguage(`${ctx}`)
     }
 
+    
     return (
         <Navbar bg="white" expand="lg" className="px-5 py-3 sticky-top navbar-header" style={{ fontSize: 13, }}>
-            <Navbar.Brand href="#home"><img src="https://arwics.com/wp-content/uploads/2019/09/arwics-logo-1.png" style={{width:110,height:30,objectFit:"cover"}} /></Navbar.Brand>
+            <Navbar.Brand href="#home">
+                 <img src="https://arwics.com/wp-content/uploads/2019/09/arwics-logo-1.png" style={{width:110,height:30,objectFit:"cover"}}  alt="icon" /></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -43,7 +45,7 @@ const Header = ({ NavLink }) => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/Product" className="nav-link ">
+                            <NavLink to="/product" className="nav-link ">
                                 <span >{t('header.3')}</span>
                             </NavLink>
                         </li>
@@ -53,12 +55,12 @@ const Header = ({ NavLink }) => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/Gallery" className="nav-link">
+                            <NavLink to="/gallery" className="nav-link">
                                 <span >{t('header.5')}</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/News" className="nav-link">
+                            <NavLink to="/news" className="nav-link">
                                 <span >{t('header.6')}</span>
                             </NavLink>
                         </li>
@@ -67,19 +69,7 @@ const Header = ({ NavLink }) => {
                                 <FormControl type="text" placeholder="Search" className="mr-sm-2 search-header" />
                             </Form>
                         </li>
-                        <li>
-                            <DropdownButton
-                                alignRight
-                                title="Dropdown right"
-                                id="dropdown-menu-align-right"
-                                onSelect={(e) => changeLanguage(e)}
-                            >
-                                <Dropdown.Item eventKey="en">English</Dropdown.Item>
-                                <Dropdown.Item eventKey="fr">IndoNesia</Dropdown.Item>
-                                <Dropdown.Item eventKey="option-3">option 3</Dropdown.Item>
-                               
-                            </DropdownButton>
-                        </li>
+                      
                     </ul>
 
                 </Nav>
